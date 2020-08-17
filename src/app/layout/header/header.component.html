@@ -10,7 +10,7 @@
             </div>
             <a class="nav-item nav-link" [routerLink]=" ['/'] ">Home</a>
             <a *ngIf="!email" class="nav-item nav-link" routerLinkActive="active" [routerLink]=" ['/signin'] ">Sign in</a>
-            <a *ngIf="!email" class="nav-item nav-link" routerLinkActive="active" [routerLink]=" ['/signout'] ">Sign out</a>
+            <a *ngIf="!email" class="nav-item nav-link" routerLinkActive="active" [routerLink]=" ['/signup'] ">Sign up</a>
             <a  *ngIf="email" class="nav-item nav-link" (click)="handleSignOut()">Logout</a>
         </div>
     </div>
